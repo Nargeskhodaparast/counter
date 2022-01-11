@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>counter</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+<div class="container">
+    <button class="counter">counter: 0</button>
+</div>
+<script>
+    let counter = document.querySelector(".counter"), count;
+    count = 0;
+    counter.addEventListener('click', function () {
+        count += 1;
+        counter.innerHTML = "counter: " + count;
+    })
+</script>
+</body>
+</html>
